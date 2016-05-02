@@ -1,0 +1,43 @@
+////
+/// Import all files
+/// Order do matter
+///
+////
+
+/// Settings
+@import 'settings/colors';
+@import 'settings/dimensions';
+@import 'settings/fonts';
+
+// Generic
+@import 'generic/normalize';
+@import 'generic/reset';
+
+// Tools (helper, mixins and function)
+@import 'tools/headings';
+@import 'tools/list-horizontal';
+@import 'tools/input';
+@import 'tools/page-sized';
+@import 'tools/link-block';
+
+
+// Base
+@import 'elements/blocks';
+@import 'elements/forms';
+@import 'elements/headings';
+@import 'elements/body';
+@import 'elements/links';
+
+// Objects
+@import 'objects/alignements';
+@import 'objects/forms';
+@import 'objects/highlights';
+@import 'objects/list-horizontal';
+@import 'objects/page-sized';
+@import 'objects/link-block';
+
+// Components
+@import 'components/slides';
+
+// Trumps
+@import 'trumps/print';

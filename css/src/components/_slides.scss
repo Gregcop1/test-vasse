@@ -1,0 +1,26 @@
+$slide-background: #cfcae1 !default;
+
+body { overflow: hidden; }
+
+.slides {
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+
+  .slide {
+    position: absolute; top: 0; right: 0; bottom: 0; left: 0; float: left; width: 100%; background: $slide-background; transition: transform 500ms ease-in-out; z-index: 1;
+
+    &.future { transform: translate3d(100%, 0, 0); }
+    &.active { z-index: 1;
+
+      transform: translate3d(0, 0, 0); }
+    &.past { transform: translate3d(-100%, 0, 0); }
+  }
+  video { position: absolute; right: 0; bottom: 0; left: 0; width: 100%; height: auto; }
+}
+
+.controls {
+  position: fixed; top: 100px; left: 0; width: 400px; z-index: 10;
+  text-align: center;
+
+  button { margin: 0 50px; border-radius: 3px; width: 30px; height: 30px; background: $white;
+    font-size: 2em; font-weight: bold;}
+}

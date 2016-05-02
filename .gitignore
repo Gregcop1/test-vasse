@@ -1,0 +1,11 @@
+.sass-cache
+node_modules
+npm-debug.log
+Gemfile.lock
+
+!.gitkeep
+.db_thumb
+.DS_Store
+._*
+
+*_local.*
